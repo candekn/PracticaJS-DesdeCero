@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <title>Ejercicio - 19.Formulario</title>
+        <link rel="stylesheet" href="css/main.css">
+        <script type="text/javascript" src="js/19-ejercicio-dom.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1 class="center">Ejercicio DOM, Eventos y Funciones</h1>
+        </header>
+            <section>
+                <ol>
+                    <li>
+                       Formulario campos: Nombres, Apellidos y Edad 
+                    </li>
+                    <li>
+                        Botón de enviar el formulario: <strong>Evento Submit</strong>
+                    </li>
+                    <li>
+                        Mostrar datos por pantalla
+                    </li>
+                    <li>
+                        Tener un botón que al darle click, nos muestre los datos actuales del formulario
+                    </li>
+                    <li>
+                        Validar el formulario
+                    </li>
+                </ol>
+            </section>
+            <div class="box">
+                <form action="#" method="POST" id="formulario" onsubmit="return false;"> <!--El return false aquí evita la redirección-->
+                    <p>
+                        <label for="nombre">Nombre:&nbsp;&nbsp;&nbsp;</label>
+                        <input type="text" name="nombre" id="nombre" required />  
+                    </p>
+                    <p>
+                        <label for="apellido">Apellido:&nbsp;</label>
+                        <input type="text" name="apellido" id="apellido" required />
+                    </p>
+                    <p>
+                        <label for="edad">Edad:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <input type="number" name="edad" id="edad" required />
+                    </p>
+                    <p>
+                        <input type="submit" value="Enviar" id="submit" />
+                    </p>            
+                </form>
+            </div>
+
+            <div class="box center dashed">
+                <h3>Información del Usuario:</h3>
+                <hr />
+
+            </div>
+
+        <footer>
+
+        </footer>
+    </body>
+</html>

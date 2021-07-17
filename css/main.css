@@ -1,0 +1,15 @@
+.center{
+    text-align: center;
+}
+.box{
+    width: 250px;
+    height: 200px;
+    float: left;
+    margin: 20px;
+}
+.dashed{
+    border: 2px;
+    border-style: dashed;
+    border-radius: 1em;
+    padding: 5px;
+}
